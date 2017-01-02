@@ -7,7 +7,7 @@ In `.package.json`
 "requires": [
 		{
 			"name": "Zefiros-Software/Date",
-			"version": ">2.1.0"
+			"version": ">=2.1.0"
 		}
 ]
 ```
