@@ -4,4 +4,6 @@ project "Date"
 
     zpm.export [[
         includedirs "./"
+
+        flags "C++11"
     ]]
