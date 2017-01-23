@@ -10,9 +10,6 @@ void test_a()
         std::istringstream in{"Sun 2016-12-11"};
         sys_days tp;
         parse( in, "%a %F", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -20,9 +17,6 @@ void test_a()
         std::istringstream in{"Sun 2016-12-11"};
         sys_days tp;
         parse( in, "%A %F", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -30,9 +24,6 @@ void test_a()
         std::istringstream in{"Sunday 2016-12-11"};
         sys_days tp;
         parse( in, "%a %F", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -40,9 +31,6 @@ void test_a()
         std::istringstream in{"Sunday 2016-12-11"};
         sys_days tp;
         parse( in, "%A %F", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -50,9 +38,6 @@ void test_a()
         std::istringstream in{"Dec 2016-12-11"};
         sys_days tp;
         parse( in, "%a %F", tp );
-        assert( in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 1970_y / 1 / 1 );
     }
     {
@@ -60,9 +45,6 @@ void test_a()
         std::istringstream in{"Sat 2016-12-11"};
         sys_days tp;
         parse( in, "%a %F", tp );
-        assert( in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 1970_y / 1 / 1 );
     }
     {
@@ -70,9 +52,6 @@ void test_a()
         std::istringstream in{"Sun  2016-12-11"};
         sys_days tp;
         parse( in, "%a %F", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -80,9 +59,6 @@ void test_a()
         std::istringstream in{"Sun 2016-12-11"};
         sys_days tp;
         parse( in, "%a  %F", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
 }
@@ -95,9 +71,6 @@ void test_b()
         std::istringstream in{"Dec 11 2016"};
         sys_days tp;
         parse( in, "%b %d %Y", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -105,9 +78,6 @@ void test_b()
         std::istringstream in{"Dec 11 2016"};
         sys_days tp;
         parse( in, "%B %d %Y", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -115,9 +85,6 @@ void test_b()
         std::istringstream in{"Dec 11 2016"};
         sys_days tp;
         parse( in, "%h %d %Y", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -125,9 +92,6 @@ void test_b()
         std::istringstream in{"December 11 2016"};
         sys_days tp;
         parse( in, "%b %d %Y", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -135,9 +99,6 @@ void test_b()
         std::istringstream in{"December 11 2016"};
         sys_days tp;
         parse( in, "%B %d %Y", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -145,9 +106,6 @@ void test_b()
         std::istringstream in{"December 11 2016"};
         sys_days tp;
         parse( in, "%h %d %Y", tp );
-        assert( !in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 2016_y / 12 / 11 );
     }
     {
@@ -155,9 +113,6 @@ void test_b()
         std::istringstream in{"Dece 11 2016"};
         sys_days tp;
         parse( in, "%b %d %Y", tp );
-        assert( in.fail() );
-        assert( !in.bad() );
-        assert( !in.eof() );
         assert( tp == 1970_y / 1 / 1 );
     }
 }
