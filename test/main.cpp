@@ -1,3 +1,9 @@
+#include "date.h"
+
+#include <cassert>
+#include <sstream>
+#include <type_traits>
+
 static_assert( std::is_trivially_destructible<date::day>{}, "");
 static_assert( std::is_default_constructible<date::day>{}, "");
 static_assert( std::is_trivially_copy_constructible<date::day>{}, "");
