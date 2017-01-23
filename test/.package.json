@@ -1,0 +1,9 @@
+{
+    "name": "Zefiros-Software/Date-Dev",
+    "requires": [
+        {
+            "name": "Zefiros-Software/Date",
+            "version": ">=2.1.0"
+        }
+    ]
+}

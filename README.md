@@ -12,7 +12,13 @@ In `.package.json`
 ]
 ```
 
-In `premake5.lua`
+In `zpm.lua`
 ```lua
 zpm.uses "Zefiros-Software/Date"
 ```
+
+# Status
+Type        | Status
+----------- | -------
+Linux & OSX | [![Build Status](https://travis-ci.org/Zefiros-Software/Date.svg?branch=master)](https://travis-ci.org/Zefiros-Software/Date)
+Windows     | [![Build status](https://ci.appveyor.com/api/projects/status/c13dy4u6qpudbap8?svg=true)](https://ci.appveyor.com/project/Zefiros-Software/date)
