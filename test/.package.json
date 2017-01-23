@@ -3,7 +3,7 @@
     "requires": [
         {
             "name": "Zefiros-Software/Date",
-            "version": ">=2.1.0"
+            "version": "@head"
         }
     ]
 }
