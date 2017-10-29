@@ -37,3 +37,5 @@ extern/
 assets/
 test/extern
 test/assets
+**/@bin/**
+**/@obj/**
