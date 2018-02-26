@@ -10,7 +10,7 @@ export: |
         zpm.export [[
             includedirs "include"
 
-            cppdialect "C++11"
+            cppdialect "C++14"
         ]]
 ...
 ---

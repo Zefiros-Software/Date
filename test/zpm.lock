@@ -1,0 +1,42 @@
+{
+  "definition": "./",
+  "optionals": [],
+  "private": {
+    "libraries": [ {
+      "definition": "../",
+      "hash": "2935f80109b8cfc15eb1243afe35f7ec3530f971",
+      "name": "Zefiros-Software/Date",
+      "repository": "https://github.com/HowardHinnant/date.git",
+      "tag": "2.1.0",
+      "version": "2.1.0",
+      "versionRequirement": ">=2.1.0"
+    } ],
+    "modules": [ {
+      "definition": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
+      "hash": "06075c936e348ee256cf5c05e449ce8d8f32054b",
+      "name": "Zefiros-Software/Defaults",
+      "public": {
+        "libraries": [ {
+          "definition": "https://github.com/Zefiros-Software/GoogleTest.git",
+          "hash": "b4d333f14f977b3668de4e794d7d2e00b322d59a",
+          "name": "Zefiros-Software/GoogleTest",
+          "repository": "https://github.com/google/googletest.git",
+          "tag": "release-1.4.0",
+          "version": "1.4.0",
+          "versionRequirement": "@head || ^1.0.0"
+        }, {
+          "definition": "https://github.com/Zefiros-Software/GoogleBenchmark.git",
+          "hash": "56f52ee228783547f544d9ac4a533574b9010e3f",
+          "name": "Zefiros-Software/GoogleBenchmark",
+          "repository": "https://github.com/google/benchmark.git",
+          "tag": "HEAD",
+          "versionRequirement": "@head"
+        } ]
+      },
+      "repository": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
+      "tag": "HEAD",
+      "versionRequirement": "@head"
+    } ]
+  },
+  "repository": "./"
+}
