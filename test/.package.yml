@@ -1,7 +1,7 @@
 libraries:
-    - name: Zefiros-Software/Date
-      version: '>=2.1.0'
-      definition: ../
+  - name: Zefiros-Software/Date
+    version: '>=2.1.0'
+    definition: ../
 modules:
   - name: Zefiros-Software/Defaults
     version: '@head'
