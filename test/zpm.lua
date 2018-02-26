@@ -25,12 +25,8 @@
 -- ]]
 
 workspace "Date"
-   configurations { "Test" }
-
-   startproject "Date"
+   
+    zefiros.testDefinition("Date")
 
     project "Date"
-        kind "ConsoleApp"
-        files "main.cpp"
-
         zpm.uses "Zefiros-Software/Date"
